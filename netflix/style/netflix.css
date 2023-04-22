@@ -1,5 +1,4 @@
   @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital@1&display=swap');
-
 *{
     margin : 0 ;
     padding: 0;
@@ -18,4 +17,119 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:30px 100px;
+    z-index: 100; 
 }
+
+header .Logo img{
+    max-width: 15px;
+}
+.navigation{
+    display : flex;
+}
+.navigation li{
+    list-style: none;
+    margin : 0 10px;
+
+}
+.navigation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px; /*각 자음 모음 띄어쓰기*/
+}
+
+.navigation li:hover a{  /*마우스 올리면 빨간색으로 변하게 해줌*/
+    color : red;
+
+}
+
+.search {
+    position: relative;
+    width : 300px;
+    height:  40px;
+}
+.search{
+    position : relative;
+    width : 300px;
+    height: 40px;
+}
+.search input{
+    position : absolute;
+    top: 0;
+    left : 0;
+    width : 100%;
+    height: 100%;
+    color : white;
+    background : transparent;    /*안에 배경 투명하게 해주는거*/
+    border : 1px solid grey;
+    outline : none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);  /*이 안에 이미지가 들어가면 배경블러처리해줌 자동으로 내려갈때마다!*/ 
+}
+.search input::placeholder{
+    color : white;
+}
+
+.search .fa-search{  /*왜 얘가*/
+    position : absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); /*Y는 세로로 이동 +아래 - 위
+                                    X는 가로로 이동 +오른쪽 -왼쪽*/
+    padding-left: 50px;
+    color: white;
+    border-radius: 1px solid white;
+}
+
+.banner{
+    position : relative;
+    width : 100%;
+    min-height: 100vh;
+    padding : 0 100px;
+    display : flex;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+.banner .bg {
+    position : absolute;
+    top:0;
+    left : 0;
+    width : 100%;
+    height: 100%;
+    object-fit: cover;  
+    /*요기까지하면 모든 배너안에 들어올 내용들이 전부 옆으로 붙음 flex로*/
+}
+.content{
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.movieTitle { 
+    max-width: 250px;
+
+}
+.banner .content h4{
+    color : grey;
+    font-weight: 500;
+}
+
+.banner .content h4 span{
+    padding : 0 10px;
+    border-right : 1px solid grey; /*글자 사이에 선 생기게 해주기*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
