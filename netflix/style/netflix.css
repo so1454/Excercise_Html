@@ -1,4 +1,9 @@
-  @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital@1&display=swap');
+/* :root{
+    --var_9 d(#fff rgba)
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital@1&display=swap');
 *{
     margin : 0 ;
     padding: 0;
